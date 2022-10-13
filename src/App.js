@@ -19,7 +19,9 @@ function App() {
         <h3>grocery buddy</h3>
         <div className="form-control">
           <input type="text" />
-          <button type="submit" className="submit-btn"></button>
+          <button type="submit" className="submit-btn">
+            {isEditing ? "edit" : "Submit"}
+          </button>
         </div>
       </form>
       <div className="grocery-container">
