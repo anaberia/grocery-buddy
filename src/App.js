@@ -20,7 +20,7 @@ function App() {
     } else if (name && isEditing) {
       // deal with edit
     } else {
-      // show alert
+      showAlert(true, "added to your list", "success");
       const newItem = { id: new Date().getTime().toString(), title: name };
       setList([newItem, ...list]);
       setName("");
