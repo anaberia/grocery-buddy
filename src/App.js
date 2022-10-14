@@ -58,7 +58,7 @@ function App() {
         <div className="grocery-container">
           <List items={list} />
           <button className="clear-btn" onClick={clearList}>
-            clear items
+            clear list
           </button>
         </div>
       )}
