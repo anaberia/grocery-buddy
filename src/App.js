@@ -24,7 +24,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!name) {
+    if (name.trim() === "") {
       showAlert(true, "please enter your list", "danger");
     } else if (name && isEditing) {
       setList(
